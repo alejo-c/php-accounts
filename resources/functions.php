@@ -17,4 +17,18 @@ function hidden_when($pages)
 		}
 	}
 }
+
+function connectDB()
+{
+	$hostname = "localhost";
+	$username = "root";
+	$password = "";
+	$database = "accountsdb";
+	return mysqli_connect($hostname, $username, $password, $database);
+}
+
+function disconnectDB($connection)
+{
+	return mysqli_close($connection);
+}
 ?>
