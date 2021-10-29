@@ -17,7 +17,7 @@ require_once("./resources/functions.php")
 		</ul>
 		<ul class="nav-end">
 			<li <?php echo active_when("login"); ?>>
-				<a class="nav-item">Login</a>
+				<a href="login.php" class="nav-item">Login</a>
 			</li>
 
 			<li <?php echo active_when("signup"); ?>>
