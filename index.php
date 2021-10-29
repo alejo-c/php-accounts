@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +21,14 @@
 	<main>
 		<?php
 		require_once("./resources/functions.php");
+
+		if (isset($_SESSION['id'])) {
+		} else {
+		}
+
+		if (isset($_GET['type'])) {
+			toast("index.php", $_GET['type'], $_GET['message']);
+		}
 		?>
 	</main>
 </body>

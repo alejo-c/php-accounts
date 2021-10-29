@@ -16,20 +16,23 @@ require_once("./resources/functions.php")
 			</li>
 		</ul>
 		<ul class="nav-end">
-			<li <?php echo active_when("login"); ?>>
+			<li <?php echo active_when("login");
+				echo hidden_when("LOGGED"); ?>>
 				<a href="login.php" class="nav-item">Login</a>
 			</li>
 
-			<li <?php echo active_when("signup"); ?>>
+			<li <?php echo active_when("signup");
+				echo hidden_when("LOGGED"); ?>>
 				<a href="signup.php" class="nav-item">Sign up</a>
 			</li>
 
-			<li <?php echo active_when("profile"); ?>>
-				<a class="nav-item">Profile</a>
+			<li <?php echo active_when("profile");
+				echo hidden_when("UNLOGGED"); ?>>
+				<a href="profile.php" class="nav-item">Profile</a>
 			</li>
 
-			<li>
-				<a class="nav-item">log out</a>
+			<li <?php echo hidden_when("UNLOGGED"); ?>>
+				<a href="./resources/logoutprocess.php" class="nav-item">log out</a>
 			</li>
 		</ul>
 	</nav>

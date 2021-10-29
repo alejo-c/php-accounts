@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['id'])) {
+	header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +25,10 @@
 		<?php
 		require_once("./resources/functions.php");
 		include_once("./components/loginform.html");
+
+		if (isset($_GET['type'])) {
+			toast("login.php", $_GET['type'], $_GET['message']);
+		}
 		?>
 	</main>
 </body>

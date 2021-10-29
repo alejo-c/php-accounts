@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['id'])) {
+	header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +23,12 @@
 
 	<main>
 		<?php
+		require_once("./resources/functions.php");
 		include_once("./components/signupform.html");
+
+		if (isset($_GET['type'])) {
+			toast("signup.php", $_GET['type'], $_GET['message']);
+		}
 		?>
 	</main>
 </body>
