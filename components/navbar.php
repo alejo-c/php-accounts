@@ -21,7 +21,7 @@ require_once("./resources/functions.php")
 			</li>
 
 			<li <?php echo active_when("signup"); ?>>
-				<a class="nav-item">Sign up</a>
+				<a href="signup.php" class="nav-item">Sign up</a>
 			</li>
 
 			<li <?php echo active_when("profile"); ?>>

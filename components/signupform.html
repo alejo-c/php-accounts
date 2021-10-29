@@ -5,17 +5,27 @@
 	</head>
 
 	<body>
-		<div id="login">
+		<div id="signup">
 			<header>
-				<h1 class="title">Login</h1>
+				<h1 class="title">Sign up</h1>
 			</header>
 			<p>
-				Welcome back, Log into your account.
+				Welcome! Enter your new account info.
 			</p>
-			<form action="./resources/loginprocess.php" method="post">
+			<form action="./resources/signupprocess.php" method="post">
 				<div class="form-group">
 					<input type="text" name="username" minlength="5" maxlength="20"
 						placeholder="Enter your Username" id="username-input" required>
+				</div>
+
+				<div class="form-group">
+					<input type="text" name="lastname" minlength="5" maxlength="20"
+						placeholder="Enter your Lastname" id="username-input" required>
+				</div>
+
+				<div class="form-group">
+					<input type="text" name="firstname" minlength="5" maxlength="20"
+						placeholder="Enter your Firstname" id="username-input" required>
 				</div>
 
 				<div class="form-group">
@@ -24,14 +34,14 @@
 				</div>
 
 				<div class="btn-group">
-					<button type="submit" class="btn"><span>Log in</span></button>
+					<button type="submit" class="btn"><span>Sign up</span></button>
 					<button type="reset" class="btn"><span>Reset</span></button>
 				</div>
 			</form>
 
 			<div class="link-box">
-				Don't have an account yet?
-				<a href="signup.php">Sign Up</a>
+				Do you already have an account?
+				<a href="login.php">Login</a>
 			</div>
 		</div>
 	</body>
