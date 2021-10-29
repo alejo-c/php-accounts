@@ -1,0 +1,31 @@
+body {
+	margin: 0%;
+	background-color: #738ADB;
+	font-family: 'Segoe UI';
+}
+
+header {
+	grid-area: h;
+}
+
+main {
+	grid-area: m;
+}
+
+.wrapper {
+	display: grid;
+	gap: 1em;
+	grid-template-areas: "h h h" ". . ." ". m .";
+}
+
+@media (min-width: 576px) {
+	.wrapper {
+		grid-template-areas: "h h h h h" ". . . . ." ". . m . .";
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		grid-template-areas: "h h h h h h h" ". . . . . . ." ". . . m . . .";
+	}
+}
