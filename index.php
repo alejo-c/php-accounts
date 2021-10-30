@@ -27,7 +27,7 @@ session_start();
 		}
 
 		if (isset($_GET['type'])) {
-			toast("index.php", $_GET['type'], $_GET['message']);
+			toast(".", $_GET['type'], $_GET['message']);
 		}
 		?>
 	</main>

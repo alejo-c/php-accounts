@@ -6,4 +6,4 @@ if (!isset($_SESSION['id'])) {
 }
 
 session_destroy();
-header("Location: ../index.php?type=info&message=Logged out successfully");
+header("Location: ../?type=info&message=Logged out successfully");

@@ -1,5 +1,5 @@
 <?php
-$result = session_start();
+session_start();
 require_once("functions.php");
 
 $username = $_POST["username"];
@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
 		'lastname' => $row['lastname']
 	);
 
-	header("Location: ../index.php?type=success&message=Logged in successfully");
+	header("Location: ../?type=success&message=Logged in successfully");
 } else {
 	header("Location: ../login.php?type=error&message=Wrong username or password");
 }

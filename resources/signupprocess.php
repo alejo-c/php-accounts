@@ -14,7 +14,7 @@ $result = $conn->query($query);
 disconnectDB($conn);
 
 if ($result) {
-	header("Location: ../index.php?type=success&message=Signed up successfully");
+	header("Location: ../?type=success&message=Signed up successfully");
 } else {
 	header("Location: ../signup.php?type=error&message=Username already exists");
 }
