@@ -7,7 +7,7 @@ $password = md5($_POST["password"]);
 
 $conn = connectDB();
 
-$query = "select username, password, role, firstname, lastname from user where username='$username' and password='$password';";
+$query = "select username, password, role, firstname, lastname from users where username='$username' and password='$password';";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {

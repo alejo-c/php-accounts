@@ -8,7 +8,7 @@ $password = md5($_POST['password']);
 
 $conn = connectDB();
 
-$query = "insert into user(username, password, firstname, lastname) values('$username', '$password', '$firstname', '$lastname');";
+$query = "insert into users(username, password, firstname, lastname) values('$username', '$password', '$firstname', '$lastname');";
 $result = $conn->query($query);
 
 disconnectDB($conn);

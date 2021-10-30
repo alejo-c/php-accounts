@@ -7,7 +7,7 @@ $password = md5($_POST["password"]);
 
 $conn = connectDB();
 
-$query = "select username, password, role, firstname, lastname from user where username='$username' and password='$password';";
+$query = "select username,password,role,firstname,lastname from users where username='$username' and password='$password';";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
 	if ($updated) {
 		date_default_timezone_set("America/Bogota");
 		$new_date = date("Y-m-d H:i:s");
-		$query = "update user set " . implode(",", $columns) . ",modification_datetime='$new_date' where username='$username';";
+		$query = "update users set " . implode(",", $columns) . ",modification_datetime='$new_date' where username='$username';";
 		echo $query;
 		$result = $conn->query($query);
 
