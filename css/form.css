@@ -3,7 +3,7 @@
 	color: whitesmoke;
 }
 
-#login, #signup {
+#login, #signup, #profile {
 	padding: 2em;
 	background-color: #2C2F33;
 	color: lightgray;
@@ -21,7 +21,7 @@ form {
 	margin-bottom: 1em;
 }
 
-#username-input, #password-input {
+input[type="text"], input[type="password"] {
 	font-family: inherit;
 	font-size: 100%;
 	outline: 0;
