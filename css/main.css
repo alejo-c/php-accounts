@@ -14,7 +14,7 @@ main {
 
 .wrapper {
 	display: grid;
-	gap: 1em;
+	row-gap: 1em;
 	grid-template-areas: "h h h" ". . ." ". m .";
 }
 

@@ -10,13 +10,13 @@ $lastname = isset($_POST['new-lastname']) ? $_POST['new-lastname'] : $_SESSION['
 </head>
 
 <body>
-	<div id="profile">
+	<div class="form-container">
 		<header>
 			<h1 class="title">Update Profile</h1>
+			<h2 class="title"><?php echo "$username - $firstname $lastname"; ?></h2>
 		</header>
 		<p>
-			Update your account information and<br>
-			introduce your password to confirm.
+			Update your account information and introduce<br>your password to confirm.
 		</p>
 		<form action="./resources/updateprocess.php" method="post">
 			<div class="form-group">

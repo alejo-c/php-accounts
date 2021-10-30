@@ -3,7 +3,7 @@
 	color: whitesmoke;
 }
 
-#login, #signup, #profile {
+.form-container {
 	padding: 2em;
 	background-color: #2C2F33;
 	color: lightgray;
