@@ -38,7 +38,9 @@ if ($result->num_rows > 0) {
 	}
 
 	if ($updated) {
-		$query = "update user set " . implode(",", $columns) . " where username = '$username';";
+		date_default_timezone_set("America/Bogota");
+		$new_date = date("Y-m-d H:i:s");
+		$query = "update user set " . implode(",", $columns) . ",modification_datetime='$new_date' where username='$username';";
 		echo $query;
 		$result = $conn->query($query);
 
