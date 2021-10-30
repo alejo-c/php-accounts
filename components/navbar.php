@@ -12,7 +12,7 @@ require_once("./resources/functions.php")
 	<nav class="main-nav">
 		<ul class="nav-start">
 			<li <?php echo active_when("index"); ?>>
-				<a href="index.php" class="nav-item">Home</a>
+				<a href="." class="nav-item">Home</a>
 			</li>
 		</ul>
 		<ul class="nav-end">

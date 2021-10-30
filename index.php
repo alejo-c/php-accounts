@@ -13,7 +13,7 @@ session_start();
 	<link rel=" stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="wrapper">
 	<header>
 		<?php include_once("./components/navbar.php"); ?>
 	</header>
@@ -23,7 +23,15 @@ session_start();
 		require_once("./resources/functions.php");
 
 		if (isset($_SESSION['id'])) {
+			$firstname = $_SESSION['firstname'];
+			$lastname = $_SESSION['lastname'];
+			echo "<div class='box'>Welcome $firstname $lastname.</div>";
+
+			if ($_SESSION['role'] == 'admin') {
+				
+			}
 		} else {
+			echo "<div class='box'>Please Log into your account.</div>";
 		}
 
 		if (isset($_GET['type'])) {
