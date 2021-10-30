@@ -12,7 +12,7 @@ if (isset($_SESSION['id'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
-	<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1738/1738691.png" type="image/x-icon">
 	<link rel=" stylesheet" href="css/main.css">
 </head>
 
