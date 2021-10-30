@@ -38,7 +38,7 @@ function disconnectDB($connection)
 	return mysqli_close($connection);
 }
 
-function toast($page, $type, $message, $time = 3000)
+function toast($page, $type, $message, $time = 2000)
 {
 	echo '
 	<script>
