@@ -10,30 +10,22 @@ header {
 
 main {
 	grid-area: m;
+	display: inline-block;
+	width: 23em;
+	min-width: 23em;
 }
 
 .wrapper {
 	display: grid;
-	row-gap: 1em;
-	grid-template-areas: "h h h" ". . ." ". m .";
-}
-
-@media (min-width: 576px) {
-	.wrapper {
-		grid-template-areas: "h h h h h" ". . . . ." ". . m . .";
-	}
-}
-
-@media (min-width: 768px) {
-	.wrapper {
-		grid-template-areas: "h h h h h h h" ". . . . . . ." ". . . m . . .";
-	}
+	row-gap: 2em;
+	grid-template-columns: 3fr 2fr 3fr;
+	grid-template-areas: "h h h" ". m .";
 }
 
 .box {
 	padding: 2em;
 	background-color: #2C2F33;
 	color: lightgray;
-	border-radius: 3%;
+	border-radius: 1em;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
