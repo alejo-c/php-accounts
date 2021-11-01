@@ -15,26 +15,20 @@ session_start();
 
 <body class="wrapper">
 	<header>
-		<?php include_once("./components/navbar.php"); ?>
+		<?php include_once "components/navbar.php" ?>
 	</header>
 
 	<main>
 		<?php
-		require_once("./resources/functions.php");
-
 		if (isset($_SESSION['id'])) {
 			$firstname = $_SESSION['firstname'];
 			$lastname = $_SESSION['lastname'];
 			echo "<div class='box'>Welcome $firstname $lastname.</div>";
-
-			if ($_SESSION['role'] == 'admin') {
-				
-			}
 		} else {
-			echo "<div class='box'>Please Log into your account.</div>";
+			echo "<div class='box'>Welcome, Please Log into your account.</div>";
 		}
 
-		if (isset($_GET['type'])) {
+		if (isset($_GET['message'])) {
 			toast(".", $_GET['type'], $_GET['message']);
 		}
 		?>

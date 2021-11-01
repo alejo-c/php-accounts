@@ -18,15 +18,14 @@ if (isset($_SESSION['id'])) {
 
 <body class="wrapper">
 	<header>
-		<?php include_once("./components/navbar.php"); ?>
+		<?php include_once 'components/navbar.php'; ?>
 	</header>
 
 	<main>
 		<?php
-		require_once("./resources/functions.php");
-		include_once("./components/signupform.html");
+		include_once 'components/signupform.html';
 
-		if (isset($_GET['type'])) {
+		if (isset($_GET['message'])) {
 			toast("signup.php", $_GET['type'], $_GET['message']);
 		}
 		?>

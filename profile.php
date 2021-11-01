@@ -18,13 +18,12 @@ if (!isset($_SESSION['id'])) {
 
 <body class="wrapper">
 	<header>
-		<?php include_once("./components/navbar.php"); ?>
+		<?php include_once 'components/navbar.php'; ?>
 	</header>
 
 	<main>
 		<?php
-		require_once("./resources/functions.php");
-		include_once("./components/profileform.php");
+		include_once 'components/profileform.php';
 
 		if (isset($_GET['type'])) {
 			toast("profile.php", $_GET['type'], $_GET['message']);
