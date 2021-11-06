@@ -1,5 +1,5 @@
 <?php
-require_once("./resources/mainfunctions.php");
+require_once './resources/mainfunctions.php';
 ?>
 
 <link rel="stylesheet" href="css/navbar.css">
