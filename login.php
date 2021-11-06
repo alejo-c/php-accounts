@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['id'])) {
-	header('Location: .'); # index.php
+	header('Location: .');
 }
 ?>
 <!DOCTYPE html>
@@ -18,12 +18,12 @@ if (isset($_SESSION['id'])) {
 
 <body class="wrapper">
 	<header>
-		<?php include_once "components/navbar.php"; ?>
+		<?php include_once 'components/navbar.php'; ?>
 	</header>
 
 	<main>
 		<?php
-		include_once "components/loginform.html";
+		include_once 'components/loginform.html';
 
 		if (isset($_GET['message'])) {
 			toast("login.php", $_GET['type'], $_GET['message']);
