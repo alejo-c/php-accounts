@@ -12,18 +12,11 @@ nav ul {
 
 nav>ul>li {
 	display: inline-block;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 @media (min-width: 576px) {
-	nav ul {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-@media (min-width: 768px) {
 	nav ul {
 		padding-left: 5vw;
 		padding-right: 5vw;
@@ -49,6 +42,7 @@ nav>ul>li {
 .nav-item:hover, .active>.nav-item {
 	background-color: #2C2F33;
 	color: #738ADB;
+	box-shadow: rgba(0, 0, 0, .35) 0px 0px 20px;
 }
 
 .hidden>.nav-item {
