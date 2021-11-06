@@ -1,3 +1,3 @@
 # PHP Accounts System
 
-Sign up user accounts in database, user login, edit profile, accounts management as admin.
+Manage user accounts storaged in MySQL database with SQL injection Prevention.
